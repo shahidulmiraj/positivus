@@ -114,7 +114,7 @@ nav {
   font-weight: 400;
   line-height: 28px;
 }
-.banner-heading button {
+button {
   display: flex;
   padding: 20px 35px;
   align-items: flex-start;
@@ -129,7 +129,7 @@ nav {
   cursor: pointer;
   transition: all 0.5s ease-in-out;
 }
-.banner-heading button:hover {
+button:hover {
   color: black;
   background-color: white;
 }
@@ -272,9 +272,95 @@ nav {
   transition: all 0.5s ease-in-out;
 }
 .card-section-3 .service-card:hover .service-card-link img {
-  content: url(../image/Icon\ \(1\).png);
+  content: url(../image/icon_1.png);
 }
 .card-section-3 .service-card:hover .service-card-link p {
   color: white;
   transition: all 0.5s ease-in-out;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------- */
+/* cta section  */
+.cta-block {
+  display: flex;
+  width: 1440px;
+  align-items: center;
+  gap: -715px;
+  margin: 123.5px 0 163.5px 0;
+}
+.cta {
+  display: flex;
+  width: 1240px;
+  height: 347px;
+  padding-left: 60px;
+  align-items: center;
+  gap: 275px;
+  flex-shrink: 0;
+  border-radius: 45px;
+  background: var(--Grey, #f3f3f3);
+}
+.cta-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 26px;
+}
+.cta-img {
+  display: flex;
+  height: 394px;
+  padding-right: 135px;
+  align-items: center;
+}
+.cta-img img {
+  width: 359px;
+  height: 394.269px;
+}
+.cta-card h3 {
+  width: 500px;
+  font-size: 30px;
+}
+.cta-card p {
+  width: 500px;
+}
+/* ------------------------------------------------------------------------------------------------------------------------ */
+/* case studies section  */
+.case-studies-section .section-heading {
+  margin-bottom: 85px;
+}
+.case-studies {
+  display: flex;
+  padding: 70px 60px;
+  align-items: flex-start;
+  gap: 64px;
+  border-radius: 45px;
+  background: var(--Dark);
+}
+.case-study {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+.case-study p {
+  color: #fff;
+}
+.case-study-link {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.case-study-link a {
+  color: var(--Green);
+  font-size: 20px;
+  text-decoration: none;
+}
+.case-study-link a:hover {
+  color: #fff;
+  text-decoration: underline;
+  transition: all 0.5s ease-in-out;
+}
+.case-study-line {
+  width: 1px;
+  height: 186px;
+  background: #fff;
 }
