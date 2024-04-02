@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
 
 body {
   font-family: "Space Grotesk", sans-serif;
@@ -9,7 +9,9 @@ body {
   padding: 0;
 }
 :root {
-  --Dark: #191A23;
+  --Dark: #191a23;
+  --Green: #b9ff66;
+  --Grey: #f3f3f3;
 }
 /* ----------------------------------------------------------------------------------------------------------- */
 /* universal design */
@@ -19,8 +21,6 @@ body {
 p {
   font-size: 18px;
 }
-
-
 
 /* ----------------------------------------------------------------------------------------------------------- */
 /* header design */
@@ -34,7 +34,7 @@ nav {
   align-items: center;
   margin-top: 60px;
 }
-.nav-items ul{
+.nav-items ul {
   display: flex;
   align-items: center;
   gap: 40px;
@@ -49,19 +49,19 @@ nav {
   font-size: 20px;
 }
 .nav-items ul li a::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -3px;
   left: 0;
-  width: 0%; 
+  width: 0%;
   height: 2px;
   background-color: black;
   transition: all 0.5s ease-in-out;
 }
-.nav-items ul li a:hover::after  {
+.nav-items ul li a:hover::after {
   width: 100%;
 }
-.nav-items ul .special-nav-item a:hover::after  {
+.nav-items ul .special-nav-item a:hover::after {
   width: 0%;
 }
 .special-nav-item {
@@ -73,11 +73,11 @@ nav {
   border: 1px solid var(--Dark);
   cursor: pointer;
 }
-.special-nav-item:hover{
+.special-nav-item:hover {
   transition: all 0.5s ease-in-out;
   background-color: var(--Dark);
 }
-.special-nav-item:hover a{
+.special-nav-item:hover a {
   transition: all 0.5s ease-in-out;
   color: white;
 }
@@ -98,12 +98,11 @@ nav {
   align-items: flex-start;
   gap: 35px;
 }
-.banner .banner-img{
+.banner .banner-img {
   width: 48%;
 }
 .banner .banner-img img {
   width: 100%;
-
 }
 .banner-heading h1 {
   font-size: 60px;
@@ -122,12 +121,12 @@ nav {
   gap: 10px;
   border-radius: 14px;
   background: var(--Dark);
-  color: #FFF;
+  color: #fff;
   text-align: center;
-  font-family: "Space Grotesk",sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-size: 20px;
   line-height: 28px;
-  cursor: pointer; 
+  cursor: pointer;
   transition: all 0.5s ease-in-out;
 }
 .banner-heading button:hover {
@@ -138,11 +137,144 @@ nav {
 /* ------------------------------------------------------------------------------------------------------------------------- */
 /* logotypes design  */
 
-.logo-items {
+.logo-items ul {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  margin-bottom: 140px;
 }
 .logo-items li {
   list-style: none;
+}
+/* ------------------------------------------------------------------------------------------------------------------- */
+/* services section design  */
+.section-heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  margin-bottom: 80px;
+}
+.section-heading h2 {
+  padding: 0px 7px;
+  border-radius: 7px;
+  background: var(--Green);
+  font-size: 40px;
+  font-weight: 500;
+}
+.section-heading p {
+  width: 580px;
+  flex-shrink: 0;
+}
+.service-details {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+.service-cards {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+.service-card {
+  display: flex;
+  width: 600px;
+  padding: 50px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 45px;
+  border: 1px solid var(--Dark);
+  background: var(--Grey);
+  box-shadow: 0px 5px 0px 0px var(--Dark);
+}
+.service-card:hover {
+  background: var(--Green);
+  transition: all 0.5s ease-in-out;
+}
+.service-card:hover .service-card-header h3 {
+  background: #fff;
+  transition: all 0.5s ease-in-out;
+}
+.service-card-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 93px;
+}
+.service-card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.service-card-header h3 {
+  display: flex;
+  padding: 0px 7px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 7px;
+  background: var(--Green);
+  font-size: 30px;
+  font-weight: 500;
+}
+.service-card-link {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.service-card-link p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.service-card-link p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.card-section-2 .service-card {
+  background: var(--Dark);
+  box-shadow: 0px 5px 0px 0px var(--Dark);
+}
+.card-section-2 .service-card .service-card-header h3 {
+  background: #fff;
+}
+.card-section-2 .service-card .service-card-link p {
+  color: #fff;
+}
+.card-section-2 .service-card:hover {
+  background: var(--Grey);
+}
+.card-section-2 .service-card:hover .service-card-header h3 {
+  background: var(--Green);
+  transition: all 0.5s ease-in-out;
+}
+.card-section-2 .service-card:hover .service-card-link img {
+  content: url(../image/Icon.png);
+}
+.card-section-2 .service-card:hover .service-card-link p {
+  color: var(--Dark);
+  transition: all 0.5s ease-in-out;
+}
+
+.card-section-3 .service-card {
+  background: var(--Green);
+  box-shadow: 0px 5px 0px 0px var(--Dark);
+}
+.card-section-3 .service-card .service-card-header h3 {
+  background: #fff;
+}
+.card-section-3 .service-card:hover {
+  background: var(--Dark);
+}
+.card-section-3 .service-card:hover .service-card-header h3 {
+  background: var(--Green);
+  transition: all 0.5s ease-in-out;
+}
+.card-section-3 .service-card:hover .service-card-link img {
+  content: url(../image/Icon\ \(1\).png);
+}
+.card-section-3 .service-card:hover .service-card-link p {
+  color: white;
+  transition: all 0.5s ease-in-out;
 }
