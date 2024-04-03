@@ -420,3 +420,95 @@ button:hover {
   font-weight: 500;
   width: 612px;
 }
+/* ------------------------------------------------------------------------------------------------------------------------ */
+/* team section  */
+.team-section {
+  margin-top: 140px;
+}
+.team-section .section-heading p {
+  width: 473px;
+  flex-shrink: 0;
+}
+.all-team-cards {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+.team-cards {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+.team-card {
+  display: flex;
+  width: 387px;
+  height: 331px;
+  padding: 40px 35px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 45px;
+  border: 1px solid var(--Dark);
+  background: #fff;
+  box-shadow: 0px 5px 0px 0px var(--Dark);
+}
+.team-card:hover {
+  scale: 105%;
+  transition: all 0.5s ease-in-out;
+}
+.team-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 28px;
+}
+.team-card-person {
+  display: flex;
+  align-items: flex-start;
+  align-self: stretch;
+  position: relative;
+}
+.team-card-line {
+  width: 317px;
+  height: 1px;
+  background: #000;
+}
+.team-card-picture-name {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+  flex: 1 0 0;
+}
+.team-card-social-link {
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  right: 0;
+}
+.team-card-social-link:hover {
+  opacity: 0.6;
+  transition: all 0.5s ease-in-out;
+}
+.team-card-picture-name .picture {
+  width: 105.648px;
+  height: 102.823px;
+}
+.team-card-picture-name .name {
+  width: 194.176px;
+}
+.team-card-picture-name .name h4 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.team-btn {
+  margin: 40px 0 100px 0;
+  display: flex;
+  justify-content: end;
+}
+.team-btn button {
+  display: flex;
+  width: 269px;
+  justify-content: center;
+  align-items: center;
+}
