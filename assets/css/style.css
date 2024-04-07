@@ -574,3 +574,106 @@ button:hover {
 
 /* ---------------------------------------------------------------------------------------------------------------------- */
 /* contact section   */
+.contact-section {
+  margin: 140px 0;
+}
+.contact-section .section-heading p {
+  width: 323px;
+  flex-shrink: 0;
+}
+.contact-detail {
+  display: flex;
+  justify-content: space-between;
+  width: 1240px;
+  padding: 60px 0 80px 100px;
+  align-items: flex-start;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 45px;
+  background: var(--Grey, #f3f3f3);
+}
+.contact-detail form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+.radio-btn {
+  display: flex;
+  align-items: flex-start;
+  gap: 35px;
+}
+.custom-radio {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.custom-radio input[type="radio"] {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  outline: none;
+}
+
+.custom-radio input[type="radio"]:before {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 60%;
+  margin: 21% auto;
+  border-radius: 50%;
+}
+
+.custom-radio input[type="radio"]:checked:before {
+  background: var(--Green);
+  transition: all 0.3s ease-in-out;
+}
+
+.fields {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 25px;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+.field label {
+  font-size: 16px;
+}
+.field input,
+.field textarea {
+  display: flex;
+  width: 556px;
+  padding: 18px 30px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 14px;
+  border: 1px solid #000;
+  background: #fff;
+  font-size: 18px;
+}
+.field textarea {
+  height: 190px;
+}
+.form-btn {
+  display: flex;
+  width: 556px;
+  padding: 20px 35px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.contact-image {
+  width: 368px;
+  height: 648px;
+}
+.contact-image img {
+  width: 100%;
+  height: 100%;
+}
